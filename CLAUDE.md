@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A single-page Preact app that serves as the web UI for [meraki-builder](https://github.com/halmartin/meraki-builder)
-firmware — custom firmware for Cisco Meraki MS-series switches. The app runs entirely client-side and talks to a
-`configd` CGI daemon on the switch itself (`/cgi-bin/config` and `/cgi-bin/status`) to read/write the switch's port
+This repo adds a web UI to [meraki-builder](https://github.com/halmartin/meraki-builder) — custom firmware for Cisco
+Meraki MS-series switches — as a single-page Preact app. The app runs entirely client-side and talks to a `configd`
+CGI daemon on the switch itself (`/cgi-bin/config` and `/cgi-bin/status`) to read/write the switch's port
 configuration and poll live status. There is no separate backend in this repo; auth is handled by the switch's PAM
 login via `uhttpd`, not by the app.
 
